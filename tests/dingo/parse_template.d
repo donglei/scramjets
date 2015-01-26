@@ -311,8 +311,8 @@ class DJTemplateParser
                     extend = null;
                     break;
                 } 
-                ret ~= extend;
-                extend = getFileTemplateExtends(extend);
+                ret ~= potential_path;
+                extend = getFileTemplateExtends(potential_path);
             }
         }
         return ret;
